@@ -134,7 +134,7 @@ class CarouselMedia(BaseModel):
 class VideoVersion(BaseModel):
     type: Optional[int] = None
     url: Optional[str] = None
-    _typename: Optional[str] = Field(None, alias="__typename")
+    typename: Optional[str] = Field(None, alias="__typename")
 
 class Caption(BaseModel):
     pk: Optional[str] = None
@@ -234,7 +234,7 @@ class ThreadItem(BaseModel):
     should_show_replies_cta: bool = None
     reply_to_author: Optional[User] = None
     can_inline_expand_below: bool = None
-    _typename: Optional[str] = Field(None, alias="__typename")
+    typename: Optional[str] = Field(None, alias="__typename")
 
 class Thread(BaseModel):
     thread_items: List[ThreadItem] = None
